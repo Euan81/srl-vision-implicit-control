@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# ---- Participant data: never commit ----
+recordings/
+*.xdf
+*.xlsx
+per_trial_metrics.csv
+per_participant_condition.csv
+singleton_by_trial.csv
+per_c2_trial.csv
+**/*descriptives*.csv
+**/*per_participant*.csv
+**/T_participant_flow.csv
+**/*_contrasts.csv
