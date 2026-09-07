@@ -1,0 +1,20 @@
+# Reproduces the reported results. Python 3.9+.
+numpy>=1.21
+pandas>=1.3
+scipy>=1.7
+matplotlib>=3.4
+
+# Random-slope LRT (mixed models)
+statsmodels>=0.13
+
+# pd.ExcelFile for --workbook SUS_NASA-TLX.xlsx
+openpyxl>=3.0
+
+# XDF loading in orient_telemetry_analysis2.py
+pyxdf>=1.16
+
+# NOT INSTALLED for the reported run. thesis_results3_final2.py uses
+# pingouin.rm_anova when present and its own numpy/scipy implementation
+# otherwise; the reported results used the internal backend
+# (see ANALYSIS_MANIFEST.csv). Installing pingouin changes the backend.
+# pingouin

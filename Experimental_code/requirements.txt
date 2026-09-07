@@ -1,0 +1,20 @@
+# Control machine (MacBook). Python 3.9+.
+numpy>=1.21
+opencv-python>=4.5
+
+# Arduino button stream. Without it the runners fall back to
+# keyboard-debug mode (keys 1-8 simulate face presses).
+pyserial>=3.5
+
+# LSL markers and robot velocity streams. Without it logging still
+# works but robot control and XDF synchronisation are disabled.
+pylsl>=1.16
+
+# Multi-monitor placement; falls back to origin (0,0) if absent.
+screeninfo>=0.8
+
+# Hand tracking in orient_experiment.py. On first run the model is
+# fetched over HTTPS; certifi supplies the CA bundle, and the fetch
+# retries with an unverified context if verification fails.
+mediapipe>=0.9
+certifi>=2021.10
